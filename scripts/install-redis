@@ -10,7 +10,7 @@
 # \curl -sSL https://raw.githubusercontent.com/dannybster/ci-scripts/master/scripts/install-redis | bash -s
 REDIS_VERSION=${REDIS_VERSION:="3.2.4"}
 REDIS_PORT=${REDIS_PORT:="6380"}
-REDIS_DIR=${MONGODB_DIR:="$HOME/redis"}
+REDIS_DIR=${REDIS_DIR:="$HOME/redis"}
 
 set -e
 CACHED_DOWNLOAD="${HOME}/cache/redis-linux-x86_64-ubuntu1404-redis-${REDIS_VERSION}.tgz"
