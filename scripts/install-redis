@@ -23,7 +23,7 @@ tar -xaf "${CACHED_DOWNLOAD}" --strip-components=1 --directory "${REDIS_DIR}"
 
 cd $REDIS_DIR/src && make
 
-# Allow users to opt out of starting MongoDB (ie: they just need the tools)
+# Allow users to opt out of starting Redis (ie: they just need the tools)
 if [ $REDIS_START = "Y" ]; then
   # Make sure to use the exact parameters you want for MongoDB and give it enough sleep time to properly start up
   nohup bash -c "LC_ALL=C ${REDIS_DIR}/src/mongod --port ${REDIS_PORT} 2>&1" &
